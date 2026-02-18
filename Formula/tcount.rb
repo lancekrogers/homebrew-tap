@@ -1,21 +1,21 @@
 class Tcount < Formula
   desc "Count tokens in files using various LLM tokenizers"
   homepage "https://github.com/lancekrogers/go-token-counter"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/lancekrogers/go-token-counter/releases/download/v0.1.0/tcount_0.1.0_darwin_arm64.tar.gz"
-    sha256 "70499b4210d4572a4119b4de6806a199498ca4d81826a7b3e221fbe5aa4a04d3"
+    url "https://github.com/lancekrogers/go-token-counter/releases/download/v0.2.0/tcount_0.2.0_darwin_arm64.tar.gz"
+    sha256 "1c961ac8a7b643f5d42097e7052717c9299fc5d42f3cea698da2d80646bf7f56"
   elsif OS.mac?
-    url "https://github.com/lancekrogers/go-token-counter/releases/download/v0.1.0/tcount_0.1.0_darwin_amd64.tar.gz"
-    sha256 "b1669546ea7bc33add1f9ac931177ff31c7d8aade529ef8d35801fb1481741fb"
+    url "https://github.com/lancekrogers/go-token-counter/releases/download/v0.2.0/tcount_0.2.0_darwin_amd64.tar.gz"
+    sha256 "6772319adb0325333d248b65adefc065fa133f53657a59d1182b5fd2e17b299d"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/lancekrogers/go-token-counter/releases/download/v0.1.0/tcount_0.1.0_linux_arm64.tar.gz"
-    sha256 "2ab518655976a95bb139e1322b3bdfe4f247a1e003e3a50c8e376100ab5cb78b"
+    url "https://github.com/lancekrogers/go-token-counter/releases/download/v0.2.0/tcount_0.2.0_linux_arm64.tar.gz"
+    sha256 "03394461c65a5289962a48179ae9b98149f003beca399105e5a29fa6fb4bc296"
   elsif OS.linux?
-    url "https://github.com/lancekrogers/go-token-counter/releases/download/v0.1.0/tcount_0.1.0_linux_amd64.tar.gz"
-    sha256 "99a3201a0ed247474c70e55ef13d25dc6626aab10434eabcc727dd2614e8d94a"
+    url "https://github.com/lancekrogers/go-token-counter/releases/download/v0.2.0/tcount_0.2.0_linux_amd64.tar.gz"
+    sha256 "d17fa522136a4e748b3c6406033e7cfb1264f5b022800099a5a0f25ba77e688c"
   end
 
   def install
