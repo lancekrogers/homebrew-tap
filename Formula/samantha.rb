@@ -27,7 +27,10 @@ class Samantha < Formula
     sherpa = Utils.safe_popen_read("go", "list", "-m", "-f", "{{.Dir}}",
                                    "github.com/k2-fsa/sherpa-onnx-go-macos").strip
     triple = Hardware::CPU.arm? ? "aarch64-apple-darwin" : "x86_64-apple-darwin"
-    libexec.install Dir["#{sherpa}/lib/#{triple}/*.dylib"]
+    # Copy (not install/move) — the dylibs live in the read-only module cache.
+    libexec.mkpath
+    cp Dir["#{sherpa}/lib/#{triple}/*.dylib"], libexec
+    chmod 0644, Dir["#{libexec}/*.dylib"]
 
     # Swap the module-cache rpath for one pointing at the bundled dylibs, then
     # re-sign (rewriting the Mach-O invalidates the signature).
