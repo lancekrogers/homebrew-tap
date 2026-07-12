@@ -1,21 +1,21 @@
 class Tcount < Formula
   desc "Count tokens in files using various LLM tokenizers"
   homepage "https://github.com/lancekrogers/tcount"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/lancekrogers/tcount/releases/download/v0.4.0/tcount_0.4.0_darwin_arm64.tar.gz"
-    sha256 "545fedb8151bb242db371340237e9b824d30e29791787fede003de04685b9200"
+    url "https://github.com/lancekrogers/tcount/releases/download/v0.5.0/tcount_0.5.0_darwin_arm64.tar.gz"
+    sha256 "768bb7fab11befd7708e98ea181e5d1320c413f4d50b7cd1838de7488faad106"
   elsif OS.mac?
-    url "https://github.com/lancekrogers/tcount/releases/download/v0.4.0/tcount_0.4.0_darwin_amd64.tar.gz"
-    sha256 "d4e52b66644a752f26c3257e9a7c2a839597c8759bc2d4080cae13a49ddb39c0"
+    url "https://github.com/lancekrogers/tcount/releases/download/v0.5.0/tcount_0.5.0_darwin_amd64.tar.gz"
+    sha256 "9de79ecc53ae8d1cbee288c9e4c195bd4cecdf406d11c6d6d1da964bb296b08c"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/lancekrogers/tcount/releases/download/v0.4.0/tcount_0.4.0_linux_arm64.tar.gz"
-    sha256 "932b443f3134d303c943d32f3b5d56102982311c254803f20aa7558edef4b986"
+    url "https://github.com/lancekrogers/tcount/releases/download/v0.5.0/tcount_0.5.0_linux_arm64.tar.gz"
+    sha256 "d8f1e5b04b24c5591c7bb5a80126672fa923bf91ac2f85d086669d4c76b8777a"
   elsif OS.linux?
-    url "https://github.com/lancekrogers/tcount/releases/download/v0.4.0/tcount_0.4.0_linux_amd64.tar.gz"
-    sha256 "a5d6ea0142f7599cf994bff897bf2c2b476de33633e57f5ed912e9873c1ccb32"
+    url "https://github.com/lancekrogers/tcount/releases/download/v0.5.0/tcount_0.5.0_linux_amd64.tar.gz"
+    sha256 "0b6154395542f2b1cbc44b5360469528cc8c2d935a46d9297fd70e1a2334110c"
   end
 
   def install
