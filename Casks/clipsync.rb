@@ -1,6 +1,6 @@
 cask "clipsync" do
-  version "0.1.0"
-  sha256 "03ba5c148fa2e19310551cf64c38ed3e4408254d0e77a6c3b78289500c6b4b7f"
+  version "0.1.1"
+  sha256 "9d225d23edc145a589b5d7173eaae24b809b6f2bb70f00b0dfa7df83a63a3a7c"
 
   url "https://github.com/lancekrogers/clipsync/releases/download/v#{version}/ClipSync-#{version}-macos-arm64-unsigned.dmg"
   name "ClipSync"
