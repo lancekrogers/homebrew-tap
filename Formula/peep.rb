@@ -2,28 +2,28 @@
 class Peep < Formula
   desc "Terminal file explorer with media, Markdown and Mermaid previews"
   homepage "https://github.com/lancekrogers/peep"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/lancekrogers/peep/releases/download/v0.2.0/peep_0.2.0_darwin_arm64.tar.gz"
-      sha256 "1afb02a9ca61c06391ac180c1fcc2bad59ae655894fea482d96c6374758d4295"
+      url "https://github.com/lancekrogers/peep/releases/download/v0.2.1/peep_0.2.1_darwin_arm64.tar.gz"
+      sha256 "5b092ad342b9e7889e554eb633e93195e26d2b52e774a59d97848794537723da"
     end
     on_intel do
-      url "https://github.com/lancekrogers/peep/releases/download/v0.2.0/peep_0.2.0_darwin_amd64.tar.gz"
-      sha256 "7d876105dad062ccde90582464a1e99578e84210ad2b02ed8ff4b7fe7beff472"
+      url "https://github.com/lancekrogers/peep/releases/download/v0.2.1/peep_0.2.1_darwin_amd64.tar.gz"
+      sha256 "53b4b57042b5c5755d9757ae050c8e8635e029569f19eb5f9e9b32b21d88e1af"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/lancekrogers/peep/releases/download/v0.2.0/peep_0.2.0_linux_arm64.tar.gz"
-      sha256 "001c9f19675a533b3074aa9b1dfae297a05417069f43126fa47390265ed7d7ba"
+      url "https://github.com/lancekrogers/peep/releases/download/v0.2.1/peep_0.2.1_linux_arm64.tar.gz"
+      sha256 "157d80815109a042051a0b3a2df68d0076c44bcba5469875d8e989e1efeb1607"
     end
     on_intel do
-      url "https://github.com/lancekrogers/peep/releases/download/v0.2.0/peep_0.2.0_linux_amd64.tar.gz"
-      sha256 "0e4723197213c616637860f0ba2eb739bad6ddf6e0a62c7ea327269cf2518408"
+      url "https://github.com/lancekrogers/peep/releases/download/v0.2.1/peep_0.2.1_linux_amd64.tar.gz"
+      sha256 "2ff68b92037ea685d200ea61880af913728274987e9db6cf9a8f5e21b224b128"
     end
   end
 
